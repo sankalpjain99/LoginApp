@@ -1,0 +1,21 @@
+img{
+    width: 20%;
+    margin-top: 5%;
+}
+
+.form-div{
+    width: 30%;
+    margin: 3% auto;
+}
+
+.form-group{
+    padding: 2%;
+}
+
+label{
+    padding-bottom: 2%;
+}
+
+button{
+    margin: 8% 2%;
+}
