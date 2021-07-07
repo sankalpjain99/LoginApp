@@ -1,6 +1,11 @@
 <nav class="navbar navbar-dark bg-dark mb-4">
     <div class="container">
-        <a class="navbar-brand" routerLink="/">Login App</a>
-        <a class="nav-link" routerLink="/login">Login</a>
+        <div class="d-flex flex-row">
+            <a class="navbar-brand" routerLink="/">Login App</a>
+        </div>
+        <div class="d-flex flex-row-reverse">
+            <a class="nav-link" routerLink="/login" *ngIf="!loggedIn">Login</a>
+            <a class="nav-link" routerLink="/login" *ngIf="loggedIn" (click)="logoutUser()">Logout</a>
+        </div>
     </div>
 </nav>
